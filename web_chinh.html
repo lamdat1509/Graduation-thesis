@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./assest/css/Web_chinh.css">
+    <link rel="stylesheet" href="./assest/css/row.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Temperature and Humidity</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Soil Moisture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Light Intensity</a>
+                    </li>
+                </ul>
+                <form class="my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mx-1">
+                            <a id="userlink" class="nav-link" href="">User name</a>
+                        </li>
+
+                        <li class="nav-item mx-1">
+                            <a id="signoutlink" class="nav-link" href="">Sign out</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-- body -->
+    <!------------------------------------------------------------------------------------ NODE_---------------------------------------- -->
+    <div id="background">
+        <div class="Temperature">
+            <div id="box" class="boxs">
+                <svg id="hinh_tron" class="circles">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#3d0ced" />
+                            <stop offset="100%" stop-color="#8510c4" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="150" cy="150" r="145" class="unders" id="under"></circle>
+                    <circle cx="150" cy="150" r="145" class="aboves" id="above"></circle>
+                </svg>
+
+                <span class="Temperature-text">TEMPERATURE</span>
+            </div>
+
+            <div class="containers">
+                <div id="small_round" class="small_rounds"></div>
+            </div>
+            <text id="percent" class="percents" text-anchor="middle" alignment-baseline="control">20&#176C</text>
+        </div>
+
+        <div class="Humidity">
+            <div id="box1" class="boxs1">
+                <svg id="hinh_tron1" class="circles1">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#3d0ced" />
+                            <stop offset="100%" stop-color="#8510c4" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="150" cy="150" r="145" class="unders1" id="under1"></circle>
+                    <circle cx="150" cy="150" r="145" class="aboves1" id="above1"></circle>
+                </svg>
+
+                <span class="Humidity-text">HUMIDITY</span>
+            </div>
+
+            <div class="containers1">
+                <div id="small_round1" class="small_rounds1"></div>
+            </div>
+            <text id="percent1" class="percents1" text-anchor="middle" alignment-baseline="control">0&#176C</text>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------ NODE_2---------------------------------------- -->
+    <div class="node_2">
+
+    </div>
+    <!------------------------------------------------------------------------------------ NODE_3---------------------------------------- -->
+    <div class="node_3">
+        <h1>Led Status: <span id="nhietdo"> OFF </span></h1>
+        <img id="den" src="">
+        <div class="">
+            <button type="button" id="btnOnId_01">ON</button>
+            <button type="button" id="btnOffId_01">OFF</button>
+        </div>
+    </div>
+
+    <script src="./assest/js/chinh.js"></script>
+</body>
+
+</html>

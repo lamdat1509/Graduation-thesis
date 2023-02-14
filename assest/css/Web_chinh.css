@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.mx-1 a {
+  background: red;
+  border-color: red;
+}
+
+.navbar-nav #userlink:hover,
+.navbar-nav #signoutlink:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+/*-----------------------------------  NODE 1------------------------------------------ */
+
+.node_1 {
+  display: flex;
+}
+
+.Temperature {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-left: 162px;
+}
+
+.Humidity {
+  position: relative;
+  left: 66%;
+  justify-content: center;
+  align-items: center;
+}
+
+#background {
+  height: 700px;
+  position: relative;
+  display: flex;
+}
+
+.boxs {
+  position: absolute;
+  left: 43px;
+  top: 160px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.boxs {
+  position: absolute;
+  left: 43px;
+  top: 160px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.boxs1 {
+  position: absolute;
+  left: 43px;
+  top: 160px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+svg {
+  width: 500px;
+  height: 500px;
+}
+
+circle {
+  fill: none;
+  stroke-width: 10px;
+}
+
+
+
+
+#hinh_tron {
+  width: 300px;
+  height: 300px;
+}
+
+#hinh_tron1 {
+  width: 300px;
+  height: 300px;
+}
+
+#under {
+  stroke: rgba(205, 200, 200);
+}
+
+#under1 {
+  stroke: rgba(205, 200, 200);
+}
+
+#above {
+  stroke: url(#GradientColor);
+  /* CV dtr = 2pi*r 2*pi*145 */
+  stroke-dasharray: 910px;
+  stroke-dashoffset: 910px;
+  transform-origin: 150px 150px;
+  transform: scale(-1);
+}
+
+#above1 {
+  stroke: url(#GradientColor);
+  /* CV dtr = 2pi*r 2*pi*145 */
+  stroke-dasharray: 910px;
+  stroke-dashoffset: 910px;
+  transform-origin: 150px 150px;
+  transform: scale(-1);
+}
+
+
+.containers {
+  width: 280px;
+  height: 280px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 169.4px;
+  left: 53px;
+  transform-origin: center;
+}
+
+.containers1 {
+  width: 280px;
+  height: 280px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 169.4px;
+  left: 53px;
+  transform-origin: center;
+}
+
+#small_round {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(198, 22, 221);
+  border-radius: 50%;
+  position: relative;
+  left: -16px;
+  top: 128px;
+  border: 4px solid rgba(197, 191, 191);
+}
+
+#small_round1 {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(198, 22, 221);
+  border-radius: 50%;
+  position: relative;
+  left: -16px;
+  top: 128px;
+  border: 4px solid rgba(197, 191, 191);
+}
+
+.percents {
+  position: absolute;
+  top: 282px;
+  left: 154px;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(6, 174, 252);
+}
+
+.percents1 {
+  position: absolute;
+  top: 282px;
+  left: 154px;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(6, 174, 252);
+}
+
+.box-run {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.box-run {
+  animation-duration: 1s;
+  animation-name: divrun;
+}
+
+.Temperature-text {
+  position: absolute;
+  bottom: -65px;
+  margin-left: -220px;
+  background-color: bisque;
+  padding: 10px 10px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.Humidity-text {
+  position: absolute;
+  bottom: -65px;
+  margin-left: -190px;
+  background-color: bisque;
+  padding: 10px 10px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+/* ---------------------------------------------------NODE 3------------------------------- */
